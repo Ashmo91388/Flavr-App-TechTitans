@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 const { ApolloServer } = require('apollo-server-express');
-const { typeDefs, resolvers } = require('./Schemas');
+const { typeDefs, resolvers } = require('./schemas');
 
 async function main(){
 
