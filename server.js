@@ -3,8 +3,11 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 const { ApolloServer } = require('apollo-server-express');
-const { typeDefs, resolvers } = require('./schemas');
+//const { typeDefs, resolvers } = require('./schemas');
+const typeDefs = require('./schemas/typeDefs');
+const resolvers = require('./schemas/resolvers');
 
+module.exports = { typeDefs, resolvers };
 async function main(){
 
     await mongoose.connect('mongodb+srv://michellrahman:AMU2R4Ihqd6yxjkS@cluster0.skg1eyo.mongodb.net/?retryWrites=true&w=majority')

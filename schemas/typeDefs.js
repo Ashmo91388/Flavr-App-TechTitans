@@ -7,9 +7,19 @@ const typeDefs = gql`
     password: String
     username: String
   }
+  type Review {
+    userName: String
+    title: String
+    content: String
+    rating: Int
+  }
 
   type Restaurant {
-
+    name: String!
+    cuisine: String
+    image: String
+    reviews: [Review]
+    totalRating: Int
   }
   type Query {
     user(username: String!): User
@@ -24,7 +34,7 @@ const typeDefs = gql`
       restaurantId: ID!
       title: String
       content: String
-      rating: Number!
+      rating: Int!
       userName: String!
     ): Restaurant
     removeReview(
