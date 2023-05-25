@@ -1,5 +1,4 @@
-1. user accounts
-2. get restaurant api
+1. user accounts 
 3. restaurant collection
 name
 address
@@ -12,6 +11,17 @@ rating :[
 
 
 ]
+
+//you have to know your routes
+
+1/ creata  review
+/api/resturant/:resturantId/user/:userId/rating/5
+2. get resturant with reviews
+/api/restaurants
+3. create a user
+/api/signup
+4. login
+/api/login
 
 
 //do math in the frontend average
