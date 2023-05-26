@@ -7,31 +7,31 @@ import Intro from '../components/Intro';
 import Feature from '../components/Feature';
 
 
-import { QUERY_THOUGHTS } from '../utils/queries';
+import { QUERY_THOUGHTS, QUERY_RESTAURANTS } from '../utils/queries';
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
-  const thoughts = data?.thoughts || [];
+  const { loading, data } = useQuery(QUERY_RESTAURANTS);
+  // const thoughts = data?.thoughts || [];
 
   return (
-    <main>
+    <main> testing
       <div className="flex-row justify-center">
         <div
           className="col-12 col-md-10 mb-3 p-3"
         >
-          <ThoughtForm />
+          {/* <ThoughtForm /> */}
         </div>
         <div className="col-12 col-md-8 mb-3">
-          {loading ? (
+          {/* {loading ? (
             <div>Loading...</div>
           ) : (
             <ThoughtList
               thoughts={thoughts}
               title="Some Feed for Thought(s)..."
             />
-          )}
-          <Intro />
-          <Feature />
+          )} */}
+          {/* <Intro />
+          <Feature /> */}
         </div>
       </div>
     </main>

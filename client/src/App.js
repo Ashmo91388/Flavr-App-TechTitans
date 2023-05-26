@@ -17,7 +17,7 @@ import Footer from './components/Footer';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: 'http://localhost:3001/graphql',
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
@@ -59,16 +59,16 @@ function App() {
                 path="/signup" 
                 element={<Signup />} 
               />
-              <Route 
+              {/* <Route 
                 path="/thoughts/:thoughtId" 
                 element={<SingleThought />} 
-              />
+              /> */}
             </Routes>
           </div>
           <Footer />
         </div>
       </Router>
-    </ApolloProvider>
+     </ApolloProvider>
   );
 }
 

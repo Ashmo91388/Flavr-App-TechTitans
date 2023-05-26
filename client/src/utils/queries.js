@@ -41,3 +41,21 @@ export const QUERY_SINGLE_THOUGHT = gql`
     }
   }
 `;
+export const QUERY_RESTAURANTS = gql`
+query Restaurants {
+  restaurants {
+    _id
+    cuisine
+    image
+    name
+    reviews {
+      _id
+      content
+      rating
+      title
+      userName
+    }
+    totalRating
+  }
+}
+`;
