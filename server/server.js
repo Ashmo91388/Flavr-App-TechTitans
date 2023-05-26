@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const mongoose = require("mongoose");
 const { ApolloServer } = require('apollo-server-express');
+//const {authMiddleware}
 //const { typeDefs, resolvers } = require('./schemas');
 const typeDefs = require('./schemas/typeDefs');
 const resolvers = require('./schemas/resolvers');
