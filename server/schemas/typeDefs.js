@@ -28,9 +28,12 @@ const typeDefs = gql`
     restaurants: [Restaurant]
     restaurant(_id: ID!): Restaurant
   }
-
+  type Auth {
+    token: ID! 
+    user: User
+  }
   type Mutation {
-    addUser(username: String!, email: String!, password: String!): User
+    addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): User
     addReview(
       restaurantId: ID!
