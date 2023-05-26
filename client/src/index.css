@@ -356,10 +356,7 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  font-size: 16px;
+  font-family: 'PT Serif', serif;  font-size: 16px;
   color: #1a1a1a;
 }
 
@@ -369,9 +366,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'JetBrains Mono', monospace;
-  margin: 0 0 0.5rem;
-  line-height: 1.25;
+  font-family: 'Six Caps', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 h1 {
@@ -920,8 +916,9 @@ a:hover {
 
 /* BACKGROUND UTILS */
 .bg-primary {
-  background-color: #2d3e50 !important;
+  background-color: #FF8C42 !important;
 }
+
 
 .bg-info {
   background-color: #1bbc9b !important;
@@ -936,7 +933,7 @@ a:hover {
 }
 
 .bg-dark {
-  background-color: #1a1a1a !important;
+  background-color: #D13D40 !important;
 }
 
 .bg-white {
@@ -1012,12 +1009,12 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: #D13D40;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #FF3C38;
 }
 
 .btn.btn-danger {
@@ -1030,12 +1027,12 @@ a:hover {
 }
 
 .btn.btn-info {
-  background-color: #1bbc9b;
+  background-color: #D13D40;
   color: #ffffff;
 }
 
 .btn.btn-info:hover {
-  background-color: #31e1bd;
+  background-color:#FF3C38;
 }
 
 .btn.btn-light {
@@ -1044,16 +1041,16 @@ a:hover {
 }
 
 .btn.btn-light:hover {
-  background-color: #84b8b4;
+  background-color: #FF3C38;
 }
 
 .btn.btn-dark {
-  background-color: #1a1a1a;
+  background-color:#5f5f5f;
   color: #d9e9e8;
 }
 
 .btn.btn-dark:hover {
-  background-color: #5f5f5f;
+  background-color:#aeaeae;
 }
 
 .btn.btn-white {
