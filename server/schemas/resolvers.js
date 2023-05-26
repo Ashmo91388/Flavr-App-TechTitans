@@ -21,7 +21,7 @@ const resolvers = {
       addUser: async (parent, { username, email, password }) => {
         const user = await User.create({ username, email, password });
         const token = signToken(user);
-    
+        
         return {token, user};
       },
       addRestaurant: async (parent, { name, cuisine, image, totalRating }) => {
@@ -41,7 +41,8 @@ const resolvers = {
           throw new AuthenticationError('Incorrect credentials');
         }
   
-  
+        const token = signToken(user);
+        user.token=token
         return user;
       },
       addReview: async (parent, { restaurantId, title, content, rating, userName }) => {
